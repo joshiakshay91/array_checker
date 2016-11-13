@@ -69,6 +69,7 @@ void validty_check()
 		}
 		if(!visited_queue(jump))
 		{
+			pos=input[pos];
 			curr=jump;
 			visited.push_back(curr);
 		}
@@ -81,6 +82,7 @@ void validty_check()
 			}
 			if(!visited_queue(jump))
 			{
+				pos=input[pos];
 				curr=jump;
 				visited.push_back(curr);
 			}else{
